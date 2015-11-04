@@ -1,0 +1,9 @@
+function prompt_darth_setup() {
+if [ -f "$HOME/.host_color" ]; then
+    HOST_COLOR=$(cat "$HOME/.host_color")
+else
+    HOST_COLOR=yellow
+fi
+
+  PS1="%B%F{red}%(?..%? )%f%b%B%F{red}%n%f%b@%F{$HOST_COLOR}%m %B%40<..<%~%<< %b%f%# "
+}
