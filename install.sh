@@ -17,3 +17,5 @@ fi
 
 ln -nsf "$DEVOPS/vimrc" "$HOME/.vimrc"
 ln -nsf "$DEVOPS/zshrc" "$HOME/.zshrc"
+
+source "$HOME/.zshrc"
