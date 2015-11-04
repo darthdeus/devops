@@ -78,12 +78,6 @@ set winwidth=75
 set modeline
 set modelines=10
 
-set t_Co=256
-set bg=dark
-
-let base16colorspace=256  " Access colors present in 256 colorspace
-color base16-default
-
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
@@ -109,21 +103,6 @@ set backspace=indent,eol,start
 
 " Show (partial) command in the status line
 set showcmd
-
-" Remove scrollbars
-set guioptions-=L
-set guioptions-=r
-set guioptions-=T
-
-if has("gui_running")
-  " Automatically resize splits when resizing MacVim window
-  autocmd VimResized * wincmd =
-
-  set vb
-  " color Tomorrow-Night
-  set lines=40
-  set columns=120
-endif
 
 " Highlight current line
 set cursorline
