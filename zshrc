@@ -16,4 +16,9 @@ export PROMPT="%B%F{red}%(?..%? )%f%b%B%F{red}%n%f%b@%F{$HOST_COLOR}%m %B%40<..<
 
 [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ '
 
+function change-host-color() {
+    echo "$1" > "$HOME/.host_color"
+    source "$HOME/.zshrc"
+}
+
 true
