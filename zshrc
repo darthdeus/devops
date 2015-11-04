@@ -6,9 +6,11 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' rehash true
 setopt completealiases
 
-[ -f "$HOME/.host_color" ] && source "$HOME/.host_color"
-
-HOST_COLOR="${HOST_COLOR:-yellow}"
+if [ -f "$HOME/.host_color" ]; then
+    HOST_COLOR=$(cat "$HOME/.host_color")
+else
+    HOST_COLOR=yellow
+fi
 
 export PROMPT="%B%F{red}%(?..%? )%f%b%B%F{red}%n%f%b@%F{$HOST_COLOR}%m %B%40<..<%~%<< %b%f%# "
 
