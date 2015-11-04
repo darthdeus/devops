@@ -8,7 +8,7 @@ setopt completealiases
 
 [ -f "$HOME/.host_color" ] && source "$HOME/.host_color"
 
-HOST_COLOR="${HOST_COLOR:yellow}"
+HOST_COLOR="${HOST_COLOR:-yellow}"
 
 export PROMPT="%B%F{red}%(?..%? )%f%b%B%F{red}%n%f%b@%F{$HOST_COLOR}%m %B%40<..<%~%<< %b%f%# "
 
