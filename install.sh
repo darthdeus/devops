@@ -3,7 +3,7 @@
 DEVOPS="$HOME/.devops"
 
 if [ ! -z "$HOST_COLOR" ]; then
-    echo "$HOST_COLOR" > "$HOME/.host_color"
+    echo "export HOST_COLOR=\"$HOST_COLOR\"" > "$HOME/.host_color"
 fi
 
 if [ ! -d "$DEVOPS" ]; then
