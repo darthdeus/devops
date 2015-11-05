@@ -40,4 +40,10 @@ function change-host-color() {
     source "$HOME/.zshrc"
 }
 
+function devops-reload() {
+    cd "$HOME/.devops"
+    git pull
+    source "$HOME/.zshrc"
+}
+
 true
