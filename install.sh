@@ -17,3 +17,4 @@ fi
 
 ln -nsf "$DEVOPS/vimrc" "$HOME/.vimrc"
 ln -nsf "$DEVOPS/zshrc" "$HOME/.zshrc"
+ln -nsf "$DEVOPS/tmux.conf" "$HOME/.tmux.conf"
