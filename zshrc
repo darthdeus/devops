@@ -46,4 +46,9 @@ function devops-reload() {
     source "$HOME/.zshrc"
 }
 
+for config_file ($HOME/.devops/lib/*.zsh(N)); do
+  source $config_file
+done
+unset config_file
+
 true
