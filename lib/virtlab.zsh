@@ -1,3 +1,3 @@
 function show-servers() {
-  cat "$HOME/.devops/SETUP.md"
+  cat "$HOME/.devops/SERVERS.md"
 }
