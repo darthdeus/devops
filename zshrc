@@ -33,6 +33,9 @@ promptinit
 prompt darth
 prompt darth
 
+autoload -Uz select-word-style
+select-word-style bash
+
 [[ $TERM == "dumb" ]] && unsetopt zle && PS1='$ '
 
 function change-host-color() {
